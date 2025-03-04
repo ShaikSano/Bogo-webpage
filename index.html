@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>
+            <span class="title">YAY! It’s BOGO</span>
+        </h2>
+
+        <form id="bogoForm">
+            <!-- 1 Unit Option -->
+            <div class="option expandable">
+                <input type="radio" name="unit" value="1" data-price="10.00">
+                <label>
+                    <span>1 Unit <span class="discount">10% Off</span></span>
+                    <span class="price">$10.00 USD</span>
+                </label>
+
+                <div class="product-options hidden">
+                    <select name="size1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select name="color1">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 2 Unit Option -->
+            <div class="option expandable popular">
+                <input type="radio" name="unit" value="2" data-price="18.00" checked>
+                <label>
+                    <span>2 Unit <span class="discount">20% Off</span></span>
+                    <span class="most-popular">MOST POPULAR</span>
+                    <span class="price">$18.00 USD</span>
+                    <span class="old-price">$24.00 USD</span>
+                </label>
+
+                <div class="product-options hidden">
+                    <select name="size2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select name="color2">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 3 Unit Option -->
+            <div class="option expandable">
+                <input type="radio" name="unit" value="3" data-price="24.00">
+                <label>
+                    <span>3 Unit <span class="discount">30% Off</span></span>
+                    <span class="price">$24.00 USD</span>
+                    <span class="old-price">$30.00 USD</span>
+                </label>
+                <span class="free-delivery">Free Delivery</span>
+
+                <div class="product-options hidden">
+                    <select name="size3">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select name="color3">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Total Price -->
+            <div class="total">
+                <span>Total: </span>
+                <span id="totalPrice">$18.00 USD</span>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <button type="button" class="add-to-cart">+ Add to Cart</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
